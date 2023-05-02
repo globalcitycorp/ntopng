@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Set custom ntopng version
+GC_VERSION=$1
+if test -z $GC_VERSION; then
+    echo "argument is null: please specify ntopng version"
+    exit 1
+fi
 
 AUTOCONF=$(command -v autoconf)
 AUTOMAKE=$(command -v automake)
@@ -39,7 +45,7 @@ TODAY=`date +%y%m%d`
 MAJOR_RELEASE="5"
 MINOR_RELEASE="6"
 SHORT_VERSION="$MAJOR_RELEASE.$MINOR_RELEASE"
-VERSION="$SHORT_VERSION.$TODAY"
+VERSION="$GC_VERSION"
 
 if test -d ".git"; then
 GIT_TAG=`git rev-parse HEAD`
