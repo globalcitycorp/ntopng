@@ -2,7 +2,7 @@
 # This is used to handle software updates.
 
 # Check for updates or upgrade if requested (every minute)
-* * * * * root /usr/bin/ntopng-utils-manage-updates -a handle-on-demand-requests
+# * * * * * root /usr/bin/ntopng-utils-manage-updates -a handle-on-demand-requests
 
 # Check for updates (every 24h at 5am)
-30 5 * * * root /usr/bin/ntopng-utils-manage-updates -a check-updates
+# 30 5 * * * root /usr/bin/ntopng-utils-manage-updates -a check-updates
