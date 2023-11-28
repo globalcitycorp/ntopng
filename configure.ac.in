@@ -592,6 +592,9 @@ else
  fi
 fi
 
+# Set ifdef FULL_SERIALIZATION
+CXXFLAGS="${CXXFLAGS} -DFULL_SERIALIZATION"
+
 SNMP_LIB=
 SNMP_INC=
 if test "${with_nedge+set}" != set; then
