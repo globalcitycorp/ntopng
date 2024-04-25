@@ -1,3 +1,4 @@
 {
-  "ndpi_version": "refs/tags/4.8"
+  "ndpi_version": "refs/tags/4.8",
+  "pfring_version": "refs/tags/8.6.1"
 }
