@@ -1819,7 +1819,7 @@ if  test -f /usr/bin/lsb_release ; then
     if test "x$PFRING_VERS" = "x"; then
       PFRING_DEP="pfring"
     else
-      PFRING_DEP="pfring (=$PFRING_VERS-$PFRING_RELEASE)"
+      PFRING_DEP="pfring"
     fi
   else
     PFRING_VERS=""
